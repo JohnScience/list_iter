@@ -58,7 +58,6 @@ impl<'a> MockDFSListIter<'a> {
         while list_results.last()?.is_empty() {
             list_results.pop();
         }
-        // ? will never return None
         list_results.trivial_last_entry()
     }
 }
